@@ -182,11 +182,12 @@ epochs = 10
 optimizer = torch.optim.SGD(model1.parameters(), lr=learning_rate)
 train(model1, optimizer, epochs)
 
-
 # More elegant high leve model
 print()
 print('More elegant high leve model')
 print()
+
+
 class FC_model(nn.Module):
     def __init__(self, input_features, hidden=1000, num_classes=10):
         super().__init__()
